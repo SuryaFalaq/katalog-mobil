@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Mobil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #000000, #fa0000);
+            color: #333;
+        }
+        header {    
+            background-color: #080808;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .car-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .car-item {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+        .car-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+        }
+        .car-item h3 {
+            margin: 10px 0;
+        }
+        .car-item p {
+            margin: 5px 0;
+        }
+        .contact {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-top: 20px;
+            text-align: center;
+        }
+        .contact a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .contact a:hover {
+            background: #218838;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Katalog Moon Auto Car</h1>
+        <p>Jual Beli mobil Kudus harga terjangkau!</p>
+    </header>
+    
+    <div class="container">
+        <div class="car-grid">
+            <!-- Item Mobil 1 -->
+            <div class="car-item">
+                <img src="assets/avanza.jpg" alt="Toyota Avanza">
+                <h3>Toyota Avanza 2020</h3>
+                <p>Harga: Rp 150.000.000</p>
+                <p>Deskripsi: Mobil keluarga, irit bahan bakar, kondisi prima.</p>
+            </div>
+            
+            <!-- Item Mobil 2 -->
+            <div class="car-item">
+                <img src="assets/civic.jpg" alt="Honda Civic">
+                <h3>Honda Civic 2019</h3>
+                <p>Harga: Rp 250.000.000</p>
+                <p>Deskripsi: Sedan sporty, mesin 1.5L turbo, pajak hidup.</p>
+            </div>
+            
+            <!-- Item Mobil 3 -->
+            <div class="car-item">
+                <img src="assets/fortuner.png" alt="Toyota Fortuner">
+                <h3>Toyota Fortuner Legender</h3>
+                <p>Harga: Rp 490.000.000</p>
+                <p>Deskripsi: Suv 7-seater, cocok untuk keluarga besar.</p>
+            </div>
+            
+            <!-- Item Mobil 4 -->
+            <div class="car-item">
+                <img src="assets/vnt.jpg" alt="Fortuner Vnt">
+                <h3>Fortuner Vnt </h3>
+                <p>Harga: Rp 201.000.000</p>
+                <p>Deskripsi: MPV 7-seater, Diesel, cocok untuk anak muda, full spek.</p>
+            </div>
+        </div>
+        
+        <div class="contact">
+            <h2>Kontak untuk Pemesanan & Penjualan</h2>
+            <p>Hubungi kami untuk informasi lebih lanjut atau pemesanan:</p>
+            <a href="mailto:penjualmobil@example.com?subject=Pemesanan Mobil">Kirim Email</a>
+            <a href="https://wa.me/6281234567890?text=Halo, saya tertarik dengan mobil di katalog Anda." target="_blank">WhatsApp</a>
+            <p>Telepon: 0812-3456-7890</p>
+        </div>
+    </div>
+    
+    <script>
+        // Opsional: Tambahkan JS sederhana untuk interaktivitas, misalnya alert saat klik gambar
+        document.querySelectorAll('.car-item img').forEach(img => {
+            img.addEventListener('click', () => {
+                alert('Klik untuk detail lebih lanjut!');
+            });
+        });
+    </script>
+</body>
+</html>
